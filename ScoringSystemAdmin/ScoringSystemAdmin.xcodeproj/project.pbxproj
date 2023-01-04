@@ -1,0 +1,842 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FF17F284311D14BD8EA5852 /* Pods_ScoringSystemAdmin_ScoringSystemAdminUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637BD346B9D3E990702A7C23 /* Pods_ScoringSystemAdmin_ScoringSystemAdminUITests.framework */; };
+		8C867E4D3E0372496B1F5BBD /* Pods_ScoringSystemAdmin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22ACB9FEF813CF36CABDAC40 /* Pods_ScoringSystemAdmin.framework */; };
+		B4EC84E94708C8F14B90D287 /* Pods_ScoringSystemAdminTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3593AAE33A0C064E6570105E /* Pods_ScoringSystemAdminTests.framework */; };
+		F4025EA62753D54B003C7899 /* ScoringSystemAdminApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4025EA52753D54B003C7899 /* ScoringSystemAdminApp.swift */; };
+		F4025EA82753D54B003C7899 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4025EA72753D54B003C7899 /* ContentView.swift */; };
+		F4025EAA2753D551003C7899 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4025EA92753D551003C7899 /* Assets.xcassets */; };
+		F4025EAD2753D551003C7899 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4025EAC2753D551003C7899 /* Preview Assets.xcassets */; };
+		F4025EB72753D551003C7899 /* ScoringSystemAdminTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4025EB62753D551003C7899 /* ScoringSystemAdminTests.swift */; };
+		F4025EC12753D551003C7899 /* ScoringSystemAdminUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4025EC02753D551003C7899 /* ScoringSystemAdminUITests.swift */; };
+		F4025EC32753D551003C7899 /* ScoringSystemAdminUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4025EC22753D551003C7899 /* ScoringSystemAdminUITestsLaunchTests.swift */; };
+		F4025ED02753DB13003C7899 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4025ECF2753DB13003C7899 /* Server.swift */; };
+		F4025ED427540268003C7899 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4025ED327540268003C7899 /* GoogleService-Info.plist */; };
+		F4025EDA2754B9C1003C7899 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4025ED92754B9C1003C7899 /* ViewModel.swift */; };
+		F4025EDD2754BA60003C7899 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4025EDC2754BA60003C7899 /* Home.swift */; };
+		F4025EE22754BC15003C7899 /* Competitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4025EE12754BC15003C7899 /* Competitions.swift */; };
+		F4025EE42754DC4B003C7899 /* Athlete.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4025EE32754DC4B003C7899 /* Athlete.swift */; };
+		F4025EE62754DE4E003C7899 /* Athletes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4025EE52754DE4E003C7899 /* Athletes.swift */; };
+		F4932DB62755EF24007211C2 /* TranscriptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4932DB52755EF24007211C2 /* TranscriptView.swift */; };
+		F4932DB82755F5DA007211C2 /* Transcript.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4932DB72755F5DA007211C2 /* Transcript.swift */; };
+		F4932DBA27560022007211C2 /* HeadofJudges.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4932DB927560022007211C2 /* HeadofJudges.swift */; };
+		F4932DCB2758B98E007211C2 /* Athlete.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4932DCA2758B98E007211C2 /* Athlete.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4025EB32753D551003C7899 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4025E9A2753D54B003C7899 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4025EA12753D54B003C7899;
+			remoteInfo = ScoringSystemAdmin;
+		};
+		F4025EBD2753D551003C7899 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4025E9A2753D54B003C7899 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4025EA12753D54B003C7899;
+			remoteInfo = ScoringSystemAdmin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C9BC373CE94035916B399D4 /* Pods-ScoringSystemAdmin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScoringSystemAdmin.release.xcconfig"; path = "Target Support Files/Pods-ScoringSystemAdmin/Pods-ScoringSystemAdmin.release.xcconfig"; sourceTree = "<group>"; };
+		22ACB9FEF813CF36CABDAC40 /* Pods_ScoringSystemAdmin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScoringSystemAdmin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3593AAE33A0C064E6570105E /* Pods_ScoringSystemAdminTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScoringSystemAdminTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		637BD346B9D3E990702A7C23 /* Pods_ScoringSystemAdmin_ScoringSystemAdminUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScoringSystemAdmin_ScoringSystemAdminUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		639068B819C90A2010FDAEFE /* Pods-ScoringSystemAdmin-ScoringSystemAdminUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScoringSystemAdmin-ScoringSystemAdminUITests.debug.xcconfig"; path = "Target Support Files/Pods-ScoringSystemAdmin-ScoringSystemAdminUITests/Pods-ScoringSystemAdmin-ScoringSystemAdminUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		67B1573F92EAE1A57C3FF630 /* Pods-ScoringSystemAdminTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScoringSystemAdminTests.release.xcconfig"; path = "Target Support Files/Pods-ScoringSystemAdminTests/Pods-ScoringSystemAdminTests.release.xcconfig"; sourceTree = "<group>"; };
+		8CDDE848B869CF3BD287CEDD /* Pods-ScoringSystemAdmin-ScoringSystemAdminUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScoringSystemAdmin-ScoringSystemAdminUITests.release.xcconfig"; path = "Target Support Files/Pods-ScoringSystemAdmin-ScoringSystemAdminUITests/Pods-ScoringSystemAdmin-ScoringSystemAdminUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A713FAF3753A0070001EB852 /* Pods-ScoringSystemAdminTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScoringSystemAdminTests.debug.xcconfig"; path = "Target Support Files/Pods-ScoringSystemAdminTests/Pods-ScoringSystemAdminTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E8501B1994E562EF34DD796C /* Pods-ScoringSystemAdmin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScoringSystemAdmin.debug.xcconfig"; path = "Target Support Files/Pods-ScoringSystemAdmin/Pods-ScoringSystemAdmin.debug.xcconfig"; sourceTree = "<group>"; };
+		F4025EA22753D54B003C7899 /* ScoringSystemAdmin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScoringSystemAdmin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4025EA52753D54B003C7899 /* ScoringSystemAdminApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringSystemAdminApp.swift; sourceTree = "<group>"; };
+		F4025EA72753D54B003C7899 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F4025EA92753D551003C7899 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4025EAC2753D551003C7899 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F4025EB22753D551003C7899 /* ScoringSystemAdminTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoringSystemAdminTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4025EB62753D551003C7899 /* ScoringSystemAdminTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringSystemAdminTests.swift; sourceTree = "<group>"; };
+		F4025EBC2753D551003C7899 /* ScoringSystemAdminUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoringSystemAdminUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4025EC02753D551003C7899 /* ScoringSystemAdminUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringSystemAdminUITests.swift; sourceTree = "<group>"; };
+		F4025EC22753D551003C7899 /* ScoringSystemAdminUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringSystemAdminUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F4025ECF2753DB13003C7899 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		F4025ED327540268003C7899 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F4025ED92754B9C1003C7899 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		F4025EDC2754BA60003C7899 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		F4025EE12754BC15003C7899 /* Competitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Competitions.swift; sourceTree = "<group>"; };
+		F4025EE32754DC4B003C7899 /* Athlete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Athlete.swift; sourceTree = "<group>"; };
+		F4025EE52754DE4E003C7899 /* Athletes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Athletes.swift; sourceTree = "<group>"; };
+		F4932DB52755EF24007211C2 /* TranscriptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptView.swift; sourceTree = "<group>"; };
+		F4932DB72755F5DA007211C2 /* Transcript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transcript.swift; sourceTree = "<group>"; };
+		F4932DB927560022007211C2 /* HeadofJudges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadofJudges.swift; sourceTree = "<group>"; };
+		F4932DCA2758B98E007211C2 /* Athlete.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Athlete.plist; sourceTree = "<group>"; };
+		F4932DCC2758BDF3007211C2 /* Athlete.xlsx */ = {isa = PBXFileReference; lastKnownFileType = file; path = Athlete.xlsx; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4025E9F2753D54B003C7899 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C867E4D3E0372496B1F5BBD /* Pods_ScoringSystemAdmin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4025EAF2753D551003C7899 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4EC84E94708C8F14B90D287 /* Pods_ScoringSystemAdminTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4025EB92753D551003C7899 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FF17F284311D14BD8EA5852 /* Pods_ScoringSystemAdmin_ScoringSystemAdminUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71095B19BF63C3E10A0E4336 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22ACB9FEF813CF36CABDAC40 /* Pods_ScoringSystemAdmin.framework */,
+				637BD346B9D3E990702A7C23 /* Pods_ScoringSystemAdmin_ScoringSystemAdminUITests.framework */,
+				3593AAE33A0C064E6570105E /* Pods_ScoringSystemAdminTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2EABDA8826E28008B45C6A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8501B1994E562EF34DD796C /* Pods-ScoringSystemAdmin.debug.xcconfig */,
+				1C9BC373CE94035916B399D4 /* Pods-ScoringSystemAdmin.release.xcconfig */,
+				639068B819C90A2010FDAEFE /* Pods-ScoringSystemAdmin-ScoringSystemAdminUITests.debug.xcconfig */,
+				8CDDE848B869CF3BD287CEDD /* Pods-ScoringSystemAdmin-ScoringSystemAdminUITests.release.xcconfig */,
+				A713FAF3753A0070001EB852 /* Pods-ScoringSystemAdminTests.debug.xcconfig */,
+				67B1573F92EAE1A57C3FF630 /* Pods-ScoringSystemAdminTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F4025E992753D54B003C7899 = {
+			isa = PBXGroup;
+			children = (
+				F4025EA42753D54B003C7899 /* ScoringSystemAdmin */,
+				F4025EB52753D551003C7899 /* ScoringSystemAdminTests */,
+				F4025EBF2753D551003C7899 /* ScoringSystemAdminUITests */,
+				F4025EA32753D54B003C7899 /* Products */,
+				C2EABDA8826E28008B45C6A3 /* Pods */,
+				71095B19BF63C3E10A0E4336 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F4025EA32753D54B003C7899 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4025EA22753D54B003C7899 /* ScoringSystemAdmin.app */,
+				F4025EB22753D551003C7899 /* ScoringSystemAdminTests.xctest */,
+				F4025EBC2753D551003C7899 /* ScoringSystemAdminUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4025EA42753D54B003C7899 /* ScoringSystemAdmin */ = {
+			isa = PBXGroup;
+			children = (
+				F4932DCC2758BDF3007211C2 /* Athlete.xlsx */,
+				F4932DCA2758B98E007211C2 /* Athlete.plist */,
+				F4025EE02754BBF8003C7899 /* Models */,
+				F4025ED82754B99D003C7899 /* ViewModels */,
+				F4025ED72754B997003C7899 /* View */,
+				F4025ED22753FC24003C7899 /* Server */,
+				F4025EA52753D54B003C7899 /* ScoringSystemAdminApp.swift */,
+				F4025EA92753D551003C7899 /* Assets.xcassets */,
+				F4025ED327540268003C7899 /* GoogleService-Info.plist */,
+				F4025EAB2753D551003C7899 /* Preview Content */,
+			);
+			path = ScoringSystemAdmin;
+			sourceTree = "<group>";
+		};
+		F4025EAB2753D551003C7899 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F4025EAC2753D551003C7899 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F4025EB52753D551003C7899 /* ScoringSystemAdminTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4025EB62753D551003C7899 /* ScoringSystemAdminTests.swift */,
+			);
+			path = ScoringSystemAdminTests;
+			sourceTree = "<group>";
+		};
+		F4025EBF2753D551003C7899 /* ScoringSystemAdminUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F4025EC02753D551003C7899 /* ScoringSystemAdminUITests.swift */,
+				F4025EC22753D551003C7899 /* ScoringSystemAdminUITestsLaunchTests.swift */,
+			);
+			path = ScoringSystemAdminUITests;
+			sourceTree = "<group>";
+		};
+		F4025ED22753FC24003C7899 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				F4025ECF2753DB13003C7899 /* Server.swift */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		F4025ED72754B997003C7899 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4025EA72753D54B003C7899 /* ContentView.swift */,
+				F4025EDC2754BA60003C7899 /* Home.swift */,
+				F4025EE32754DC4B003C7899 /* Athlete.swift */,
+				F4932DB52755EF24007211C2 /* TranscriptView.swift */,
+				F4932DB927560022007211C2 /* HeadofJudges.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F4025ED82754B99D003C7899 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F4025ED92754B9C1003C7899 /* ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F4025EE02754BBF8003C7899 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F4025EE12754BC15003C7899 /* Competitions.swift */,
+				F4025EE52754DE4E003C7899 /* Athletes.swift */,
+				F4932DB72755F5DA007211C2 /* Transcript.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4025EA12753D54B003C7899 /* ScoringSystemAdmin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4025EC62753D551003C7899 /* Build configuration list for PBXNativeTarget "ScoringSystemAdmin" */;
+			buildPhases = (
+				2B2A48A36C5149E960C89192 /* [CP] Check Pods Manifest.lock */,
+				F4025E9E2753D54B003C7899 /* Sources */,
+				F4025E9F2753D54B003C7899 /* Frameworks */,
+				F4025EA02753D54B003C7899 /* Resources */,
+				0DFE75F1846D641248856397 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScoringSystemAdmin;
+			productName = ScoringSystemAdmin;
+			productReference = F4025EA22753D54B003C7899 /* ScoringSystemAdmin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F4025EB12753D551003C7899 /* ScoringSystemAdminTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4025EC92753D551003C7899 /* Build configuration list for PBXNativeTarget "ScoringSystemAdminTests" */;
+			buildPhases = (
+				4239CFBFCB4824B2751C0AB3 /* [CP] Check Pods Manifest.lock */,
+				F4025EAE2753D551003C7899 /* Sources */,
+				F4025EAF2753D551003C7899 /* Frameworks */,
+				F4025EB02753D551003C7899 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4025EB42753D551003C7899 /* PBXTargetDependency */,
+			);
+			name = ScoringSystemAdminTests;
+			productName = ScoringSystemAdminTests;
+			productReference = F4025EB22753D551003C7899 /* ScoringSystemAdminTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F4025EBB2753D551003C7899 /* ScoringSystemAdminUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4025ECC2753D551003C7899 /* Build configuration list for PBXNativeTarget "ScoringSystemAdminUITests" */;
+			buildPhases = (
+				5692E035E330E9347EA3E5E8 /* [CP] Check Pods Manifest.lock */,
+				F4025EB82753D551003C7899 /* Sources */,
+				F4025EB92753D551003C7899 /* Frameworks */,
+				F4025EBA2753D551003C7899 /* Resources */,
+				6D8562593B22852D513D871B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4025EBE2753D551003C7899 /* PBXTargetDependency */,
+			);
+			name = ScoringSystemAdminUITests;
+			productName = ScoringSystemAdminUITests;
+			productReference = F4025EBC2753D551003C7899 /* ScoringSystemAdminUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4025E9A2753D54B003C7899 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					F4025EA12753D54B003C7899 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					F4025EB12753D551003C7899 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = F4025EA12753D54B003C7899;
+					};
+					F4025EBB2753D551003C7899 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = F4025EA12753D54B003C7899;
+					};
+				};
+			};
+			buildConfigurationList = F4025E9D2753D54B003C7899 /* Build configuration list for PBXProject "ScoringSystemAdmin" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4025E992753D54B003C7899;
+			productRefGroup = F4025EA32753D54B003C7899 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4025EA12753D54B003C7899 /* ScoringSystemAdmin */,
+				F4025EB12753D551003C7899 /* ScoringSystemAdminTests */,
+				F4025EBB2753D551003C7899 /* ScoringSystemAdminUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4025EA02753D54B003C7899 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4025EAD2753D551003C7899 /* Preview Assets.xcassets in Resources */,
+				F4025EAA2753D551003C7899 /* Assets.xcassets in Resources */,
+				F4932DCB2758B98E007211C2 /* Athlete.plist in Resources */,
+				F4025ED427540268003C7899 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4025EB02753D551003C7899 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4025EBA2753D551003C7899 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DFE75F1846D641248856397 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScoringSystemAdmin/Pods-ScoringSystemAdmin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScoringSystemAdmin/Pods-ScoringSystemAdmin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScoringSystemAdmin/Pods-ScoringSystemAdmin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B2A48A36C5149E960C89192 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScoringSystemAdmin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4239CFBFCB4824B2751C0AB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScoringSystemAdminTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5692E035E330E9347EA3E5E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScoringSystemAdmin-ScoringSystemAdminUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D8562593B22852D513D871B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScoringSystemAdmin-ScoringSystemAdminUITests/Pods-ScoringSystemAdmin-ScoringSystemAdminUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScoringSystemAdmin-ScoringSystemAdminUITests/Pods-ScoringSystemAdmin-ScoringSystemAdminUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScoringSystemAdmin-ScoringSystemAdminUITests/Pods-ScoringSystemAdmin-ScoringSystemAdminUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4025E9E2753D54B003C7899 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4025EA82753D54B003C7899 /* ContentView.swift in Sources */,
+				F4932DB82755F5DA007211C2 /* Transcript.swift in Sources */,
+				F4932DB62755EF24007211C2 /* TranscriptView.swift in Sources */,
+				F4025ED02753DB13003C7899 /* Server.swift in Sources */,
+				F4025EDD2754BA60003C7899 /* Home.swift in Sources */,
+				F4932DBA27560022007211C2 /* HeadofJudges.swift in Sources */,
+				F4025EDA2754B9C1003C7899 /* ViewModel.swift in Sources */,
+				F4025EE62754DE4E003C7899 /* Athletes.swift in Sources */,
+				F4025EA62753D54B003C7899 /* ScoringSystemAdminApp.swift in Sources */,
+				F4025EE22754BC15003C7899 /* Competitions.swift in Sources */,
+				F4025EE42754DC4B003C7899 /* Athlete.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4025EAE2753D551003C7899 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4025EB72753D551003C7899 /* ScoringSystemAdminTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4025EB82753D551003C7899 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4025EC12753D551003C7899 /* ScoringSystemAdminUITests.swift in Sources */,
+				F4025EC32753D551003C7899 /* ScoringSystemAdminUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4025EB42753D551003C7899 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4025EA12753D54B003C7899 /* ScoringSystemAdmin */;
+			targetProxy = F4025EB32753D551003C7899 /* PBXContainerItemProxy */;
+		};
+		F4025EBE2753D551003C7899 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4025EA12753D54B003C7899 /* ScoringSystemAdmin */;
+			targetProxy = F4025EBD2753D551003C7899 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F4025EC42753D551003C7899 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F4025EC52753D551003C7899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4025EC72753D551003C7899 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8501B1994E562EF34DD796C /* Pods-ScoringSystemAdmin.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ScoringSystemAdmin/Preview Content\"";
+				DEVELOPMENT_TEAM = Y5M498ZX7G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hk.edu.hkbu.comp.wongkashing.ScoringSystemAdmin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4025EC82753D551003C7899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C9BC373CE94035916B399D4 /* Pods-ScoringSystemAdmin.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ScoringSystemAdmin/Preview Content\"";
+				DEVELOPMENT_TEAM = Y5M498ZX7G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hk.edu.hkbu.comp.wongkashing.ScoringSystemAdmin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F4025ECA2753D551003C7899 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A713FAF3753A0070001EB852 /* Pods-ScoringSystemAdminTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y5M498ZX7G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hk.edu.hkbu.comp.wongkashing.ScoringSystemAdminTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScoringSystemAdmin.app/ScoringSystemAdmin";
+			};
+			name = Debug;
+		};
+		F4025ECB2753D551003C7899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67B1573F92EAE1A57C3FF630 /* Pods-ScoringSystemAdminTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y5M498ZX7G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hk.edu.hkbu.comp.wongkashing.ScoringSystemAdminTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScoringSystemAdmin.app/ScoringSystemAdmin";
+			};
+			name = Release;
+		};
+		F4025ECD2753D551003C7899 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 639068B819C90A2010FDAEFE /* Pods-ScoringSystemAdmin-ScoringSystemAdminUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y5M498ZX7G;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hk.edu.hkbu.comp.wongkashing.ScoringSystemAdminUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ScoringSystemAdmin;
+			};
+			name = Debug;
+		};
+		F4025ECE2753D551003C7899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CDDE848B869CF3BD287CEDD /* Pods-ScoringSystemAdmin-ScoringSystemAdminUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y5M498ZX7G;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hk.edu.hkbu.comp.wongkashing.ScoringSystemAdminUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ScoringSystemAdmin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4025E9D2753D54B003C7899 /* Build configuration list for PBXProject "ScoringSystemAdmin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4025EC42753D551003C7899 /* Debug */,
+				F4025EC52753D551003C7899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4025EC62753D551003C7899 /* Build configuration list for PBXNativeTarget "ScoringSystemAdmin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4025EC72753D551003C7899 /* Debug */,
+				F4025EC82753D551003C7899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4025EC92753D551003C7899 /* Build configuration list for PBXNativeTarget "ScoringSystemAdminTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4025ECA2753D551003C7899 /* Debug */,
+				F4025ECB2753D551003C7899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4025ECC2753D551003C7899 /* Build configuration list for PBXNativeTarget "ScoringSystemAdminUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4025ECD2753D551003C7899 /* Debug */,
+				F4025ECE2753D551003C7899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4025E9A2753D54B003C7899 /* Project object */;
+}

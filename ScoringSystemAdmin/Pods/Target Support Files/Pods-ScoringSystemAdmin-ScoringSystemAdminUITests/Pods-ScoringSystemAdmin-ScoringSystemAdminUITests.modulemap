@@ -1,0 +1,6 @@
+framework module Pods_ScoringSystemAdmin_ScoringSystemAdminUITests {
+  umbrella header "Pods-ScoringSystemAdmin-ScoringSystemAdminUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
